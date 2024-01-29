@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --mobile-width: 375px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "inter", "sans-serif";
+}
+
+body {
+  margin: 0;
+  color: var(--white);
+  background-color: var(--off-black);
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 100%;
+  width: 7em;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: .85rem;
+  color: var(--green);
+}
+
+p {
+  font-size: 14px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--dark-grey);
+  margin: 5rem 2rem 5rem 2rem;
+  border-radius: 1em;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links > li {
+  text-align: center;
+  font-weight: 600;
+  padding: .75rem;
+  margin: 1rem;
+  background-color: var(--grey);
+  border-radius: 7px;
+}
+
+.social-links > li:hover {
+  background-color: var(--green);
+  cursor: pointer;
+  color: var(--dark-grey);
+}
+
+.social-links > li:active {
+  background-color: var(--green);
+  cursor: pointer;
+  color: var(--dark-grey);
+}
+
+.social-links > li:focus {
+  background-color: var(--green);
+  cursor: pointer;
+  color: var(--dark-grey);
+}
+
+/* from 375px and more (so bigger screens) */
+@media (min-width: 375px) {
+  .card {
+    max-width: 20%;
+    min-width: 300px;
+    margin: 5rem auto 5rem auto;
+  }
+}
